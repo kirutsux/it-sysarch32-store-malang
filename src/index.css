@@ -1,0 +1,111 @@
+/* CSS */
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 20px;
+}
+
+.shop {
+  width: 100%;
+  max-width: 500px; /* Limiting image size */
+  display: block;
+  margin: 0 auto;
+}
+
+.featured-products {
+  font-size: 2rem;
+  color: #333; /* Dark text color */
+  margin-top: 20px;
+  text-align: center; /* Center-align text */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.product-link {
+  text-decoration: none;
+  color: #333; /* Dark text color */
+}
+
+.product-link:hover {
+  color: #666; /* Darker text color on hover */
+}
+
+/* Styles for ProductCard component can be added here */
+
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+/* Product card */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
+}
+
+/* CSS */
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border: 2px solid #4a2b2a; /* Dark brown border color */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(74, 43, 42, 0.3); /* Dark brown shadow */
+  background-color: #f7e8d9; /* Light beige background color */
+  margin-bottom: 30px; /* Add space below each product details section */
+  font-family: "Georgia", serif; /* Use serif font */
+}
+
+.product-image {
+  width: 300px; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 30px; /* Add space below the image */
+}
+
+.card-body {
+  text-align: center;
+}
+
+.product-name {
+  font-size: 2rem; /* Larger font size for product name */
+  margin-bottom: 15px; /* Add space below product name */
+  color: #4a2b2a; /* Dark brown text color */
+}
+
+.product-description {
+  margin-bottom: 15px; /* Add space below product description */
+  color: #333; /* Dark gray text color */
+}
+
+.product-quantity,
+.product-price {
+  font-weight: bold; /* Make quantity and price stand out */
+  margin-bottom: 10px; /* Add space below quantity and price */
+  color: #4a2b2a; /* Dark brown text color */
+}
